@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2EEAB5"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKodeBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Kode"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/etKodeBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Kode"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/tvKodeDiskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/KodeDiskon"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="8pt" />
+        <EditText
+            android:id="@+id/etKodeDiskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/KodeDiskon"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/tvJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Jumlah"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="8pt"/>
+
+        <EditText
+            android:id="@+id/etJumlah"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Jumlah"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hitung"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/KodeTransaksi"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+
+        <TextView
+            android:id="@+id/tvKodeTransaksi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/KodeTransaksi" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/namabarang"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+
+        <TextView
+            android:id="@+id/tvBarang"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Nama" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Harga"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Harga"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Total"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Total"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Diskon"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+        <TextView
+            android:id="@+id/tvDiskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Diskon"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/JumlahBayar"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+
+        <TextView
+            android:id="@+id/tvJumlahBayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/JumlahBayar" />
+    </LinearLayout>
+</ScrollView>
+
+
+
