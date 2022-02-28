@@ -3,7 +3,6 @@ package com.example.aplikasikasir;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -55,7 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 etKodeDiskon.setError("Tidak boleh kosong!");
             }
             if (!tidakdiinput) {
-                if (etKodeBarang.getText().toString().equals("AND")) {
+                String kodebarang = etKodeBarang.getText().toString().substring(0,3);
+                String diskon = etKodeBarang.getText().toString().substring(3);
+                if (kodebarang.equals("AND")) {
                     String nama1 = "Android";
                     int harga1 = 1000000;
                     tvBarang.setText(nama1);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int totalHarga = harga1 * Integer.parseInt( etJumlah.getText().toString());
                     tvTotal.setText("" + totalHarga);
 
-                    int Diskon = (totalHarga * Integer.parseInt(etKodeDiskon.getText().toString() ))/ 100;
+                    int Diskon = (totalHarga * Integer.parseInt(diskon))/ 100;
                     tvDiskon.setText(""+ Diskon);
 
                     int JumlahBayar = totalHarga - Diskon;
